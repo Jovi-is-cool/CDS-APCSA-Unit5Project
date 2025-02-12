@@ -1,14 +1,14 @@
-class City {
+class City1 {
     // instance variables are the city name and the PM value for that city
     private String name;
     private int pmValue;
 
-    public City() {
+    public City1() {
         name = "no name";
         pmValue = 0;
     }
 
-    public City(String nm, int pm) {
+    public City1(String nm, int pm) {
         name = nm;
         pmValue = pm;
     }
@@ -21,7 +21,7 @@ class City {
         return pmValue;
     }
 
-    public static City[] loadValues() {
+    public static City1[] loadValues() {
          // set up parallel arrays with the city names and pollution data
          // initialize each array with the information from the Student Data Set A, B, C, or D
 
@@ -30,11 +30,11 @@ class City {
         int[] pmValues = {48,46,25,46};
 
         //create an array of City objects
-        City[] theC = new City[4];
+        City1[] theC = new City1[4];
 
         for (int i = 0; i < 4; i++)
         {
-            theC[i] = new City(cities[i], pmValues[i]);
+            theC[i] = new City1(cities[i], pmValues[i]);
         }
         
         return theC;
