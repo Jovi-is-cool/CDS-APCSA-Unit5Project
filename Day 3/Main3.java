@@ -70,10 +70,14 @@ class Main3 {
  
  public static double average(double[] values) {
   double sum = 0;
+  int added = 0;
    for(int i = 0; i < values.length; i ++){
-      sum += values[i];
+      if(values[i] != 0){
+        sum += values[i];
+        added ++;
+      }
    }
-  return sum/values.length;
+  return sum/added;
  }
 
 

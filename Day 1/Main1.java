@@ -16,7 +16,7 @@ class Main1 {
         }
     
         //call the findMax method and print all the cities (using a loop) with the worst air quality
-        System.out.print("\n the Highest are: ");
+        System.out.print("\nthe Highest are: ");
         for(int i = 0; i < cityObjects.length; i ++){
           if(cityObjects[i].getPMValue() == cityObjects[findMax(cityObjects)].getPMValue()){
             System.out.println(cityObjects[i]);
@@ -24,7 +24,7 @@ class Main1 {
         }
     
         //call the findMin method and print all the cities (using a loop) with the best air quality
-        System.out.print("\n the Lowest are: ");
+        System.out.print("\nthe Lowest are: ");
         for(int i = 0; i < cityObjects.length; i ++){
           if(cityObjects[i].getPMValue() == cityObjects[findMin(cityObjects)].getPMValue()){
             System.out.println(cityObjects[i]);

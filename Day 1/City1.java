@@ -30,7 +30,7 @@ class City1 {
         int[] pmValues = {48,46,25,46};
 
         //create an array of City objects
-        City1[] theC = new City1[4];
+        City1[] theC = new City1[cities.length];
 
         for (int i = 0; i < 4; i++)
         {
